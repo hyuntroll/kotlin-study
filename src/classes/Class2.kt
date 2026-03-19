@@ -1,4 +1,4 @@
-package classes.clas
+package classes
 
 // 생성자
 
@@ -28,3 +28,22 @@ class Class2_2(
 }
 
 // 3. 보조생성자
+class Class2_3(name: String, age: Int) {
+    var name: String
+    var age: Int
+
+    init {
+        this.name = name
+        this.age = age
+    }
+
+    constructor(name: String, age: Int, message: String) : this(name, age) {
+        println(message)
+    }
+}
+
+fun main() {
+    val clazz = Class2_3("amy", 13)
+    val clazz2 = Class2_3("amy", 13, "메시징")
+
+}
