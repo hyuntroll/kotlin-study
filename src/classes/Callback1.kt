@@ -14,6 +14,7 @@ fun main() {
         println(number)
 
     }
+
 }
 
 fun callback1(callback: () -> Unit = {}) {
