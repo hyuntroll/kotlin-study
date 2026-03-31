@@ -54,6 +54,10 @@ class Human(name: String) : EnhancedAnimal(name) {
         this.energy += 20
     }
 
+    fun shouting() {
+        println("나는 짱이다!!!")
+    }
+
 }
 
 class Dozi(name: String) : Animal(name), Sleepable {
@@ -80,4 +84,11 @@ fun main() {
 
     var human = Human("Human")
     human.run()
+
+    val h: EnhancedAnimal = Human("Human")
+
+    if (h is Human) {
+        h.shouting()
+    }
+
 }
