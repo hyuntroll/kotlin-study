@@ -23,6 +23,10 @@ object object1 {
 
 }
 
+fun object1.action() {
+    println("<UNK> <UNK> <UNK>")
+}
+
 class Umjunsik(val name: String, var age: Int) {
     companion object {
         const val DNA = "AAAAAGGTCGAGTCAGGGTACCAGTAC"
@@ -35,6 +39,7 @@ fun main() {
     object1.run()
     object1.run()
     object1.run()
+    object1.action()
 
     var object1Instance = object1
     object1Instance.increment()
