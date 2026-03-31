@@ -6,6 +6,12 @@ fun main() {
     forEach(list) { item ->
         println(item)
     }
+
+    list.forEach {
+        println(it)
+    }
+
+    var test = Test1("큐빅")
 }
 
 fun <T> forEach(iterable: Iterable<T>, callback: (item: T) -> Unit) {
