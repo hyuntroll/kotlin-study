@@ -23,6 +23,7 @@ class Child(private val human: Human) : EnhanceAnimal {
     }
 }
 
+
 //by를 사용한 클래스 위임 1
 class ByChild1(private val human: Human) : EnhanceAnimal by human
 
